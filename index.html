@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Lumiapps Technologies Group – Illuminating Experiences for Billions</title>
+  <meta name="description" data-i18n="meta.description" content="Lumiapps kiến tạo hệ sinh thái AI Apps và Mobile Apps, đồng hành cùng gần 2 tỷ người dùng trên toàn thế giới làm việc và tận hưởng cuộc sống trọn vẹn hơn mỗi ngày." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <img class="brand-icon" src="assets/logo.svg" alt="Lumiapps logo" />
+        <span class="brand-name">Lumiapps</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#ecosystem" data-i18n="nav.ecosystem">Hệ sinh thái</a>
+        <a href="#how" data-i18n="nav.how">Cách chúng tôi làm</a>
+        <a href="#products" data-i18n="nav.products">Sản phẩm</a>
+        <a href="#achievements" data-i18n="nav.achievements">Thành tựu</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag">🇻🇳</span>
+            <span class="lang-code">VI</span>
+            <span class="lang-caret">▾</span>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select language">
+            <li role="option" data-code="EN" data-flag="🇬🇧" aria-selected="false"><span class="lang-flag">🇬🇧</span> English</li>
+            <li role="option" data-code="VI" data-flag="🇻🇳" aria-selected="true"><span class="lang-flag">🇻🇳</span> Tiếng Việt</li>
+            <li role="option" data-code="ZH" data-flag="🇨🇳" aria-selected="false"><span class="lang-flag">🇨🇳</span> 中文</li>
+            <li role="option" data-code="JA" data-flag="🇯🇵" aria-selected="false"><span class="lang-flag">🇯🇵</span> 日本語</li>
+            <li role="option" data-code="KO" data-flag="🇰🇷" aria-selected="false"><span class="lang-flag">🇰🇷</span> 한국어</li>
+            <li role="option" data-code="ES" data-flag="🇪🇸" aria-selected="false"><span class="lang-flag">🇪🇸</span> Español</li>
+            <li role="option" data-code="FR" data-flag="🇫🇷" aria-selected="false"><span class="lang-flag">🇫🇷</span> Français</li>
+            <li role="option" data-code="DE" data-flag="🇩🇪" aria-selected="false"><span class="lang-flag">🇩🇪</span> Deutsch</li>
+          </ul>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="gridCanvas"></canvas>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+    <div class="container hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero.badge">Google vinh danh Lumiapps là "Outstanding Company" 2022</span>
+        <span class="badge-arrow">→</span>
+      </div>
+      <h1 class="hero-title" data-i18n="hero.title" data-i18n-html>
+        Kiến Tạo Trải Nghiệm<br />
+        Cho <span class="gradient-text">Hàng Tỷ Người Dùng</span><br />
+        Cùng Sức Mạnh AI
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Lumiapps kiến tạo hệ sinh thái AI Apps và Mobile Apps, đồng hành cùng gần 2 tỷ người dùng
+        trên khắp thế giới làm việc năng suất hơn và tận hưởng cuộc sống trọn vẹn hơn mỗi ngày.
+      </p>
+      <div class="hero-actions">
+        <a href="#ecosystem" class="btn-primary btn-lg" data-i18n="hero.cta1">Khám phá hệ sinh thái</a>
+        <a href="#how" class="btn-play">
+          <span class="play-circle">▶</span>
+          <span data-i18n="hero.cta2">Tìm hiểu thêm</span>
+        </a>
+      </div>
+      <div class="hero-trust">
+        <span data-i18n="hero.trust">Niềm tin của gần 2 tỷ người dùng trên khắp thế giới</span>
+      </div>
+    </div>
+
+    <!-- Hero Ecosystem Mockup -->
+    <div class="hero-mockup-wrapper">
+      <div class="hero-mockup">
+        <div class="mockup-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="mockup-url">lumiapps.vn/ecosystem</span>
+        </div>
+        <div class="mockup-body">
+          <!-- Sidebar -->
+          <div class="mock-sidebar">
+            <div class="mock-logo">◈</div>
+            <div class="mock-nav-item active"></div>
+            <div class="mock-nav-item"></div>
+            <div class="mock-nav-item"></div>
+            <div class="mock-nav-item"></div>
+            <div class="mock-nav-item"></div>
+          </div>
+          <!-- Main content -->
+          <div class="mock-main">
+            <div class="mock-header">
+              <div class="mock-title-bar">
+                <div class="mock-title-text"></div>
+                <div class="mock-btn"></div>
+              </div>
+            </div>
+            <div class="mock-stats">
+              <div class="mock-stat-card">
+                <div class="stat-label"></div>
+                <div class="stat-value"></div>
+                <div class="stat-chart">
+                  <svg viewBox="0 0 60 24" preserveAspectRatio="none">
+                    <polyline points="0,20 10,15 20,18 30,8 40,12 50,5 60,8" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="mock-stat-card">
+                <div class="stat-label"></div>
+                <div class="stat-value v2"></div>
+                <div class="stat-chart">
+                  <svg viewBox="0 0 60 24" preserveAspectRatio="none">
+                    <polyline points="0,18 10,10 20,14 30,6 40,10 50,4 60,6" fill="none" stroke="#10b981" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="mock-stat-card">
+                <div class="stat-label"></div>
+                <div class="stat-value v3"></div>
+                <div class="stat-chart">
+                  <svg viewBox="0 0 60 24" preserveAspectRatio="none">
+                    <polyline points="0,16 10,12 20,16 30,10 40,8 50,14 60,6" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="mock-chart-area">
+              <div class="mock-chart-header">
+                <div class="mock-chart-title"></div>
+                <div class="mock-chart-tabs">
+                  <div class="chart-tab active"></div>
+                  <div class="chart-tab"></div>
+                  <div class="chart-tab"></div>
+                </div>
+              </div>
+              <div class="mock-chart">
+                <svg viewBox="0 0 300 100" preserveAspectRatio="none" width="100%" height="100%">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,80 C30,60 60,70 90,45 C120,20 150,50 180,30 C210,10 240,40 270,20 L300,15 L300,100 L0,100 Z" fill="url(#chartGrad)"/>
+                  <path d="M0,80 C30,60 60,70 90,45 C120,20 150,50 180,30 C210,10 240,40 270,20 L300,15" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Floating badges -->
+      <div class="float-badge badge-users">
+        <img class="fb-icon" src="assets/icons/downloads.svg" alt="" />
+        <div><strong data-i18n="mockup.badge1Value">~2 Tỷ</strong><span data-i18n="mockup.badge1Label">Lượt tải toàn cầu</span></div>
+      </div>
+      <div class="float-badge badge-revenue">
+        <img class="fb-icon" src="assets/icons/active-users.svg" alt="" />
+        <div><strong data-i18n="mockup.badge2Value">130 Triệu+</strong><span data-i18n="mockup.badge2Label">Người dùng/tháng</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOGOS ========== -->
+  <section class="logos-section">
+    <div class="container">
+      <p class="logos-label" data-i18n="logos.label">Tin cậy bởi các đối tác công nghệ hàng đầu thế giới</p>
+      <div class="logos-track">
+        <div class="logos-slide">
+          <img src="assets/partners/google.svg" alt="Google" /><img src="assets/partners/tiktok.svg" alt="TikTok" /><img src="assets/partners/meta.svg" alt="Meta Business" /><img src="assets/partners/microsoft.svg" alt="Microsoft" /><img src="assets/partners/bytedance.svg" alt="ByteDance" />
+          <img src="assets/partners/google.svg" alt="Google" /><img src="assets/partners/tiktok.svg" alt="TikTok" /><img src="assets/partners/meta.svg" alt="Meta Business" /><img src="assets/partners/microsoft.svg" alt="Microsoft" /><img src="assets/partners/bytedance.svg" alt="ByteDance" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ECOSYSTEM (FEATURES) ========== -->
+  <section class="features-section" id="ecosystem">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag" data-i18n="eco.tag">Hệ sinh thái</div>
+        <h2 class="section-title" data-i18n="eco.title" data-i18n-html>Công nghệ AI kiến tạo<br /><span class="gradient-text">hàng tỷ trải nghiệm</span></h2>
+        <p class="section-sub" data-i18n="eco.sub">Từ AI Apps đến Mobile Apps, mỗi sản phẩm của Lumiapps đều được hàng trăm triệu người trên toàn cầu tin dùng mỗi ngày.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon" style="--c:#6366f1">
+            <img src="assets/icons/genius.svg" alt="" />
+          </div>
+          <h3>Genius</h3>
+          <p data-i18n="eco.c1Desc">Ứng dụng chỉnh ảnh bằng AI, biến mọi bức ảnh thành tác phẩm ấn tượng chỉ trong vài giây.</p>
+          <a href="#" class="feat-link" data-modal="genius" data-i18n="eco.c1Link">Tìm hiểu thêm →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon" style="--c:#10b981">
+            <img src="assets/icons/artimind.svg" alt="" />
+          </div>
+          <h3>Artimind</h3>
+          <p data-i18n="eco.c2Desc">Công cụ tạo video bằng AI, biến mọi ý tưởng thành nội dung chuyên nghiệp chỉ sau vài thao tác.</p>
+          <a href="#" class="feat-link" data-modal="artimind" data-i18n="eco.c2Link">Tìm hiểu thêm →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon" style="--c:#f59e0b">
+            <img src="assets/icons/reelme.svg" alt="" />
+          </div>
+          <h3>ReelMe</h3>
+          <p data-i18n="eco.c3Desc">Ứng dụng AI Photo & Video tất cả trong một, người bạn đồng hành sáng tạo nội dung mỗi ngày.</p>
+          <a href="#" class="feat-link" data-modal="reelme" data-i18n="eco.c3Link">Tìm hiểu thêm →</a>
+        </div>
+        <div class="feature-card" id="feat-personalize">
+          <div class="feat-icon" style="--c:#ec4899">
+            <img src="assets/icons/personalize.svg" alt="" />
+          </div>
+          <h3 data-i18n="eco.c4Title">Cá nhân hóa bằng AI</h3>
+          <p data-i18n="eco.c4Desc">Thấu hiểu hành vi và nhu cầu của từng người dùng để cá nhân hóa nội dung, giao diện theo thời gian thực.</p>
+          <a href="#" class="feat-link" data-modal="personalize" data-i18n="eco.c4Link">Tìm hiểu thêm →</a>
+        </div>
+        <div class="feature-card" id="feat-security">
+          <div class="feat-icon" style="--c:#8b5cf6">
+            <img src="assets/icons/security.svg" alt="" />
+          </div>
+          <h3 data-i18n="eco.c5Title">Bảo mật & Quyền riêng tư</h3>
+          <p data-i18n="eco.c5Desc">Bảo vệ dữ liệu người dùng theo tiêu chuẩn bảo mật toàn cầu trên mọi sản phẩm.</p>
+          <a href="#" class="feat-link" data-modal="security" data-i18n="eco.c5Link">Tìm hiểu thêm →</a>
+        </div>
+        <div class="feature-card" id="feat-apps">
+          <div class="feat-icon" style="--c:#06b6d4">
+            <img src="assets/icons/apps-grid.svg" alt="" />
+          </div>
+          <h3 data-i18n="eco.c6Title">300+ Ứng Dụng</h3>
+          <p data-i18n="eco.c6Desc">Hơn 300 sản phẩm di động, phục vụ người dùng ở khắp mọi nơi trên thế giới.</p>
+          <a href="#" class="feat-link" data-modal="apps" data-i18n="eco.c6Link">Tìm hiểu thêm →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag" data-i18n="how.tag">Quy trình</div>
+        <h2 class="section-title" data-i18n="how.title" data-i18n-html>Từ dữ liệu đến<br /><span class="gradient-text">trải nghiệm cá nhân hóa</span></h2>
+      </div>
+      <div class="steps-wrapper">
+        <div class="step-connector"></div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-icon-wrap">
+              <img src="assets/icons/step-account.svg" alt="" />
+            </div>
+            <h3 data-i18n="how.s1Title">Thấu hiểu người dùng</h3>
+            <p data-i18n="how.s1Desc">Ứng dụng AI để phân tích hành vi, nhu cầu và thói quen của hàng trăm triệu người dùng trên toàn cầu.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-icon-wrap">
+              <img src="assets/icons/step-personalize.svg" alt="" />
+            </div>
+            <h3 data-i18n="how.s2Title">Cá nhân hóa bằng AI</h3>
+            <p data-i18n="how.s2Desc">Tự động cá nhân hóa nội dung, giao diện và tính năng độc quyền cho từng người dùng, giúp nâng cao trải nghiệm và mức độ tương tác.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-icon-wrap">
+              <img src="assets/icons/step-protect.svg" alt="" />
+            </div>
+            <h3 data-i18n="how.s3Title">Bảo vệ & mở rộng</h3>
+            <p data-i18n="how.s3Desc">Mở rộng đến gần 2 tỷ người dùng toàn cầu, song song với cam kết bảo vệ quyền riêng tư và an toàn dữ liệu tuyệt đối.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" data-target="2">0</div>
+        <div class="stat-plus" data-i18n="stats.suf1">Tỷ+</div>
+        <p data-i18n="stats.lbl1">Lượt tải ứng dụng toàn cầu</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="130">0</div>
+        <div class="stat-plus" data-i18n="stats.suf2">Triệu+</div>
+        <p data-i18n="stats.lbl2">Người dùng hoạt động hàng tháng</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="10000">0</div>
+        <div class="stat-plus" data-i18n="stats.suf3">TB</div>
+        <p data-i18n="stats.lbl3">Dữ liệu xử lý mỗi năm</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="300">0</div>
+        <div class="stat-plus" data-i18n="stats.suf4">+</div>
+        <p data-i18n="stats.lbl4">Ứng dụng trong hệ sinh thái</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="pricing-section" id="products">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag" data-i18n="products.tag">Sản phẩm AI</div>
+        <h2 class="section-title" data-i18n="products.title" data-i18n-html>Ba ứng dụng AI<br /><span class="gradient-text">hàng triệu người yêu thích</span></h2>
+        <p class="section-sub" data-i18n="products.sub">Ba gương mặt tiêu biểu trong hệ sinh thái hơn 300 ứng dụng của Lumiapps, phục vụ hàng trăm triệu người dùng mỗi tháng.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" id="prod-genius">
+          <img class="plan-icon" src="assets/icons/genius.svg" alt="" />
+          <div class="plan-name">Genius</div>
+          <div class="app-tagline" data-i18n="products.gTagline">Trình chỉnh ảnh AI</div>
+          <p class="plan-desc" data-i18n="products.gDesc">Chỉnh sửa và nâng cấp ảnh trong tích tắc nhờ công nghệ AI, giúp hàng chục triệu người tạo nên những bức ảnh ấn tượng mỗi ngày.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> <span data-i18n="products.gF1">Chỉnh sửa ảnh thông minh nhờ AI</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.gF2">Gợi ý cá nhân hóa theo thói quen sử dụng</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.gF3">Mượt mà trên hàng trăm triệu thiết bị</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.gF4">Bảo mật & quyền riêng tư dữ liệu</span></li>
+          </ul>
+          <a href="#" class="plan-btn btn-outline" data-modal="genius" data-i18n="products.gBtn">Tìm hiểu thêm</a>
+        </div>
+        <div class="pricing-card featured" id="prod-artimind">
+          <div class="popular-badge" data-i18n="products.aBadge">Nổi bật</div>
+          <img class="plan-icon" src="assets/icons/artimind.svg" alt="" />
+          <div class="plan-name">Artimind</div>
+          <div class="app-tagline" data-i18n="products.aTagline">Tạo video bằng AI</div>
+          <p class="plan-desc" data-i18n="products.aDesc">Biến mọi ý tưởng thành video chuyên nghiệp chỉ sau vài thao tác, được hàng triệu nhà sáng tạo nội dung tin dùng.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> <span data-i18n="products.aF1">Tạo video bằng công nghệ AI</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.aF2">Phân tích hành vi để cá nhân hóa nội dung</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.aF3">Tính năng độc quyền tăng tương tác</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.aF4">Bảo mật & quyền riêng tư dữ liệu</span></li>
+          </ul>
+          <a href="#" class="plan-btn btn-primary" data-modal="artimind" data-i18n="products.aBtn">Tìm hiểu thêm</a>
+        </div>
+        <div class="pricing-card" id="prod-reelme">
+          <img class="plan-icon" src="assets/icons/reelme.svg" alt="" />
+          <div class="plan-name">ReelMe</div>
+          <div class="app-tagline" data-i18n="products.rTagline">AI Photo & Video</div>
+          <p class="plan-desc" data-i18n="products.rDesc">Ứng dụng AI Photo & Video tất cả trong một, người bạn đồng hành sáng tạo nội dung mỗi ngày.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> <span data-i18n="products.rF1">AI Photo & Video trong một ứng dụng</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.rF2">Cá nhân hóa giao diện & nội dung</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.rF3">Tối ưu tương tác người dùng bằng AI</span></li>
+            <li><span class="check">✓</span> <span data-i18n="products.rF4">Bảo mật & quyền riêng tư dữ liệu</span></li>
+          </ul>
+          <a href="#" class="plan-btn btn-outline" data-modal="reelme" data-i18n="products.rBtn">Tìm hiểu thêm</a>
+        </div>
+      </div>
+      <p class="products-note" data-i18n="products.note">Và còn hơn 300 ứng dụng khác đang chờ bạn khám phá trong hệ sinh thái Lumiapps</p>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="testimonials-section" id="achievements">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag" data-i18n="ach.tag">Thành tựu</div>
+        <h2 class="section-title" data-i18n="ach.title" data-i18n-html>Được ghi nhận<br /><span class="gradient-text">bởi những tên tuổi hàng đầu thế giới</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars"><img src="assets/icons/award.svg" alt="" /></div>
+          <p data-i18n="ach.c1Quote">"Outstanding Company in Business Development and Expansion"</p>
+          <div class="testi-author">
+            <div>
+              <strong data-i18n="ach.c1Title">Google vinh danh Lumiapps</strong>
+              <span data-i18n="ach.c1Sub">Giải thưởng năm 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><img src="assets/icons/ranking.svg" alt="" /></div>
+          <p data-i18n="ach.c2Quote">Top 20 thế giới, Top 3 Đông Nam Á trên bảng xếp hạng Google Play.</p>
+          <div class="testi-author">
+            <div>
+              <strong data-i18n="ach.c2Title">Google Play Rankings</strong>
+              <span data-i18n="ach.c2Sub">Hạng mục Non-Game</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><img src="assets/icons/partnership.svg" alt="" /></div>
+          <p data-i18n="ach.c3Quote">Google · TikTok · Meta Business · Microsoft · ByteDance</p>
+          <div class="testi-author">
+            <div>
+              <strong data-i18n="ach.c3Title">Đối tác công nghệ</strong>
+              <span data-i18n="ach.c3Sub">Mạng lưới hợp tác toàn cầu của Lumiapps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-inner">
+      <div class="section-head">
+        <div class="section-tag" data-i18n="faq.tag">FAQ</div>
+        <h2 class="section-title" data-i18n="faq.title" data-i18n-html>Câu hỏi<br /><span class="gradient-text">thường gặp</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1"><span data-i18n="faq.q1">Lumiapps Technologies Group là công ty gì?</span> <span class="faq-arrow">+</span></button>
+          <div class="faq-a" id="faq-a-1" data-i18n="faq.a1">Lumiapps là công ty công nghệ Việt Nam, đầu tư và phát triển các AI Apps cùng Mobile Apps phục vụ gần 2 tỷ người dùng trên toàn thế giới, theo đuổi sứ mệnh "Illuminating Experiences for Billions".</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2"><span data-i18n="faq.q2">Lumiapps có bao nhiêu người dùng?</span> <span class="faq-arrow">+</span></button>
+          <div class="faq-a" id="faq-a-2" data-i18n="faq.a2">Tính đến nay, hệ sinh thái sản phẩm của Lumiapps đã đạt gần 2 tỷ lượt tải và hơn 130 triệu người dùng hoạt động hàng tháng trên toàn cầu.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3"><span data-i18n="faq.q3">Lumiapps có những sản phẩm nổi bật nào?</span> <span class="faq-arrow">+</span></button>
+          <div class="faq-a" id="faq-a-3" data-i18n="faq.a3">Lumiapps sở hữu hơn 300 ứng dụng di động, nổi bật với các AI Apps như Genius (chỉnh ảnh AI), Artimind (tạo video AI) và ReelMe (AI Photo & Video).</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4"><span data-i18n="faq.q4">Lumiapps có những đối tác công nghệ nào?</span> <span class="faq-arrow">+</span></button>
+          <div class="faq-a" id="faq-a-4" data-i18n="faq.a4">Lumiapps hợp tác với các đối tác công nghệ hàng đầu thế giới như Google, TikTok, Meta Business, Microsoft và ByteDance.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5"><span data-i18n="faq.q5">Làm sao để liên hệ hoặc gia nhập Lumiapps?</span> <span class="faq-arrow">+</span></button>
+          <div class="faq-a" id="faq-a-5" data-i18n="faq.a5">Bạn có thể liên hệ Lumiapps qua email appnikicenter@gmail.com hoặc số điện thoại 0866 673 800. Lumiapps cũng thường xuyên tìm kiếm nhân tài GenZ để gia nhập đội ngũ.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="cta-glow"></div>
+    <div class="container cta-inner">
+      <h2 data-i18n="cta.title">Sẵn sàng trải nghiệm hệ sinh thái Lumiapps?</h2>
+      <p data-i18n="cta.sub">Hòa cùng gần 2 tỷ người dùng trên toàn cầu, khám phá các ứng dụng AI của Lumiapps ngay hôm nay.</p>
+      <div class="cta-actions">
+        <a href="#products" class="btn-primary btn-lg" data-i18n="cta.btn1">Khám phá hệ sinh thái</a>
+        <a href="mailto:appnikicenter@gmail.com" class="btn-ghost-light" data-i18n="cta.btn2">Liên hệ Lumiapps</a>
+      </div>
+      <p class="cta-note" data-i18n="cta.note">appnikicenter@gmail.com · Hà Nội</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <img class="brand-icon" src="assets/logo.svg" alt="Lumiapps logo" />
+          <span class="brand-name">Lumiapps</span>
+        </a>
+        <p data-i18n="footer.tagline">Lumiapps Technologies Group — Illuminating Experiences for Billions.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.col1Title">Hệ sinh thái</h4>
+        <a href="#ecosystem" data-i18n="footer.col1L1">AI Apps</a>
+        <a href="#ecosystem" data-i18n="footer.col1L2">Mobile Apps</a>
+        <a href="#" data-i18n="footer.col1L3">Phát hành</a>
+        <a href="#products" data-i18n="footer.col1L4">Sản phẩm</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.col2Title">Công ty</h4>
+        <a href="#" data-i18n="footer.col2L1">Về Lumiapps</a>
+        <a href="#" data-i18n="footer.col2L2">We Share</a>
+        <a href="#" data-i18n="footer.col2L3">Thư viện</a>
+        <a href="mailto:appnikicenter@gmail.com" data-i18n="footer.col2L4">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.col3Title">Tuyển dụng</h4>
+        <a href="#" data-i18n="footer.col3L1">Vị trí đang tuyển</a>
+        <a href="#" data-i18n="footer.col3L2">Văn hóa Lumiapps</a>
+        <a href="#" data-i18n="footer.col3L4">Đội ngũ CxO</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.col4Title">Liên hệ</h4>
+        <a href="mailto:appnikicenter@gmail.com">appnikicenter@gmail.com</a>
+        <a href="tel:+84866673800">0866 673 800</a>
+        <a href="#" data-i18n="footer.col4L3">VP Hà Nội</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span data-i18n="footer.bottom1">© 2026 Lumiapps Technologies Group. All rights reserved.</span>
+        <span>Illuminating Experiences for Billions</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LEARN MORE MODAL ========== -->
+  <div class="modal-overlay" id="learnModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-image"><img id="modalImage" src="" alt="" /></div>
+      <div class="modal-body">
+        <div class="app-tagline" id="modalTagline"></div>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-lead" id="modalLead"></p>
+        <p class="modal-extra" id="modalExtra"></p>
+        <ul class="plan-features modal-features" id="modalFeatures"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- hidden translatable modal copy — kept in the DOM so applyLanguage() can translate it -->
+  <div id="modalTexts" hidden>
+    <p data-modal-text="genius" data-i18n="modal.gBody">Genius mang sức mạnh của trí tuệ nhân tạo vào từng khung hình: tự động làm mịn da, chỉnh sáng, xóa vật thể không mong muốn và gợi ý phong cách chỉnh sửa phù hợp với từng bức ảnh — tất cả chỉ trong vài chạm. Được hàng chục triệu người trên toàn cầu tin dùng mỗi ngày để biến những khoảnh khắc đời thường thành tác phẩm đáng nhớ.</p>
+    <p data-modal-text="artimind" data-i18n="modal.aBody">Chỉ cần một ý tưởng, Artimind sẽ giúp bạn dựng nên video hoàn chỉnh với hiệu ứng chuyển cảnh mượt mà, nhạc nền phù hợp và phụ đề tự động — không cần kỹ năng dựng phim chuyên nghiệp. Đây là công cụ đồng hành lý tưởng cho nhà sáng tạo nội dung muốn ra video chất lượng cao trong thời gian ngắn nhất.</p>
+    <p data-modal-text="reelme" data-i18n="modal.rBody">ReelMe gộp cả chỉnh ảnh và dựng video vào một ứng dụng duy nhất, giúp bạn chuyển đổi linh hoạt giữa hai định dạng nội dung mà không cần rời khỏi ứng dụng. Bộ thư viện hiệu ứng, filter và nhạc phong phú luôn được cập nhật theo xu hướng, sẵn sàng cho mọi câu chuyện bạn muốn kể.</p>
+    <p data-modal-text="personalize" data-i18n="modal.c4Body">Mỗi người dùng có một hành trình khác nhau, vì vậy Lumiapps dùng AI để học hỏi từ thói quen, sở thích và bối cảnh sử dụng theo thời gian thực — từ đó tinh chỉnh nội dung, giao diện và gợi ý sao cho phù hợp nhất với từng cá nhân. Kết quả là trải nghiệm luôn cảm giác được "may đo" riêng cho bạn, dù bạn đang dùng ứng dụng nào trong hệ sinh thái.</p>
+    <p data-modal-text="security" data-i18n="modal.c5Body">An toàn dữ liệu là nền tảng cho mọi sản phẩm của Lumiapps: dữ liệu người dùng được mã hóa toàn trình, tuân thủ các tiêu chuẩn bảo mật quốc tế và không bao giờ được chia sẻ nếu chưa có sự đồng ý rõ ràng. Đội ngũ bảo mật của chúng tôi giám sát liên tục để phát hiện và ngăn chặn rủi ro trước khi chúng ảnh hưởng đến người dùng.</p>
+    <p data-modal-text="apps" data-i18n="modal.c6Body">Từ công cụ sáng tạo, giải trí đến tiện ích hàng ngày, hệ sinh thái hơn 300 ứng dụng của Lumiapps được thiết kế để đồng hành cùng bạn trong nhiều khoảnh khắc khác nhau của cuộc sống. Mỗi sản phẩm đều chia sẻ chung nền tảng công nghệ AI và tiêu chuẩn trải nghiệm, giúp bạn chuyển đổi liền mạch giữa các ứng dụng.</p>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
